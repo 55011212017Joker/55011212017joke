@@ -35,6 +35,3 @@ class TipCalculator{
 //
 let tipCalc = TipCalculator(total: 33.25, taxPct: 0.06)// Playground - noun: a place where people can play
 
-import UIKit
-
-var str = "Hello, playground"
