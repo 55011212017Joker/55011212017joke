@@ -1,35 +1,36 @@
-let array: Array<Int> = [1,2,3,4]
-let dictionary: Dictionary<String,Int> = ["dog":1, "elephant":2]
-var airports: [String :String] = ["TYO": "TYO","DUB":"Dublin"]
-
-if airports.isEmpty{
-    println("The airport dictionary is empty.")
-}else{
-    println("The airport dictionary is not empty.")
+class TipCalculator{
+    
+    //2
+    let total: Double
+    let taxPct: Double
+    let subtotal: Double
+    
+    //3
+    init(total:Double, taxPct:Double){
+        self.total = total
+        self.taxPct = taxPct
+        subtotal = total / (taxPct + 1)
+    }
+    //4
+    func calcTipWithTipPct(tipPct:Double) ->Double{
+        return subtotal * tipPct
+    }
+    
+    //1
+    func returnPossibleTips() -> [Int: Double]{
+        let possibleTipsInferred = [0.15, 0.18, 0.20]
+        let possibleTipExplicit:[Double] = [0.15, 0.18, 0.20]
+        
+        //2
+        var retval = Dictionary<Int, Double>()
+        for possibleTip in possibleTipsInferred{
+            let intPct = Int(possibleTip*100)
+            //3
+            retval[intPct] = calcTipWithTipPct(possibleTip)
+        }
+        return retval
+    }
 }
-//เช็คว่าว่างมั้ย
 
-println("The airports dictionary contains\(airports.count) item")
-
-//update ค่า
-airports["LHR"] = "London Heathrow"
-// the airport dictionary now contains 3 item
-airports
-
-if let oldValue = airports.updateValue("Dublin Tnternational", forKey: "DUB"){
-    println("THe old value for DUB was \(oldValue).")
-}//เป็นการเปลี่ยนค่าแล้วบอกค่าเดิม
-airports
-
-
-//ลบข้อมูลใน dictionary
-airports["APL"] = "Apple International"
-
-airports["APL"] = nil
-//คำสั่งในการลบ
-
-if let removedValue = airports.removeValueForKey("DUB"){
-    println("The removed airport's name is \(removedValue).")
-}else{
-    println("The airports dictionary dose not contain a value for DUB.")
-}//ลบข้อมูลจากkey
+//
+let tipCalc = TipCalculator(total: 33.25, taxPct: 0.06)
