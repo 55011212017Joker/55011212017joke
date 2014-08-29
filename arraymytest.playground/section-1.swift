@@ -39,3 +39,31 @@ let Apple = shoppingList.removeAtIndex(2)
 shoppingList
 
 shoppingList.removeLast()
+
+var intvalue = [Int]()
+    intvalue = [55011212017,55011212167,550112111111]
+    
+var namevalue = ["Chonlakan","Per","Koo"]
+
+
+var newID = intvalue[0]+10
+
+intvalue += [55011212028,55011212007]
+namevalue += ["FFFF"]
+
+
+intvalue[0...1] = [0,1]
+intvalue[3...4] = [0,0]
+intvalue
+
+intvalue.removeAtIndex(2)
+intvalue
+
+
+
+if (true){
+    println("\(namevalue) on sale for \(intvalue) !")
+}
+    
+    
+
