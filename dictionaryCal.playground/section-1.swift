@@ -92,7 +92,6 @@ func changeweith(Animal: String,weith:Int){
     
 }
 
-
 let test = Animal(Animalname: "หมี", weith:11)
 test.valueAnimal("ช้าง")
 test.changeweith("หมี", weith: 123)
