@@ -36,7 +36,7 @@ class TipCalculator{
 let tipCalc = TipCalculator(total: 33.25, taxPct: 0.06)
 
 
-let array:Array<Int> = [1,2,3,4]
+/*let array:Array<Int> = [1,2,3,4]
 let dictionary:Dictionary<String,Int> = ["dog":1,"elepphant":2]
 
 var airports:[String:String] = ["TY0":"Tokyo","DUB":"Dublin"]
@@ -96,4 +96,4 @@ let test = Animal(Animalname: "หมี", weith:11)
 test.valueAnimal("ช้าง")
 test.changeweith("หมี", weith: 123)
 
-println(test.nameAnimal)
+println(test.nameAnimal)*/
