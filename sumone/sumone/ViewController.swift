@@ -53,5 +53,13 @@ class ViewController: UIViewController {
         three += 1
         lableThree.text = "\(String(three))"
     }
+    @IBAction func reset(sender: AnyObject) {
+        one = 0
+        two = 0
+        three = 0
+        lableOne.text = "\(String(one))"
+        lableTwo.text = "\(String(two))"
+        lableThree.text = "\(String(three))"
+    }
 }
 
