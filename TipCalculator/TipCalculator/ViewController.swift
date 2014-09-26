@@ -9,12 +9,15 @@
 import UIKit
 
 class ViewController:
-UIViewController {
+UIViewController,UITableViewDelegate {
 @IBOutlet var totalTextField : UITextField!
 @IBOutlet var taxPctSlider : UISlider!
 @IBOutlet var taxPCtLabel : UILabel!
 @IBOutlet var resultsTextView : UITextView!
+@IBOutlet var tableViewshow: UITableView!
 let tipCalc = TipCalculatorModel(total: 33.35,taxPct:0.06)
+    var possibleTips = Dictionary<Int, (tipAmt:Double, total:Double)>()
+    var sortedKeys:[Int] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,7 +42,7 @@ let tipCalc = TipCalculatorModel(total: 33.35,taxPct:0.06)
             
         }
         //5
-        resultsTextView.text = results
+        //resultsTextView.text = results
     }
     
     @IBAction func taxPercentageChanged(sender: AnyObject) {
@@ -50,7 +53,29 @@ let tipCalc = TipCalculatorModel(total: 33.35,taxPct:0.06)
         totalTextField.resignFirstResponder()
     }
     
-    
+    func tableView(tableView: UITableView,numberofRowsInSection section: Int)->Int{
+        return sortedKeys.count
+        
+    }
+    func numberofSectionsInTableView(tableView: UITableView!)->Int{
+        
+        return 1
+    }
+    func tableView(tableView:UITableView!, didSelectRowIndexPath indexPath:NSIndexPath!){
+        
+    }
+    func tableView(tableView: UITableView!,callForRowAtIndexPath indexPath: NSIndexPath!)->UITableViewCell{
+        var cell = UITableViewCell(style: UITableViewCellStyle.Value2, reuseIdentifier: nil)
+        let tipPct = sortedKeys[indexPath.row]
+        let tipAmt = possibleTips[tipPct]!.tipAmt
+        let total = possibleTips[tipPct]!.total
+        
+        cell.textLabel!.text = "\(tipPct)%:"
+        cell.detailTextLabel!.text = String(format: "Tip: $0.2f, Total: $%0.2f", tipAmt, total)
+        return cell
+        
+        
+    }
     func refreshUI(){
         
         //1
@@ -59,7 +84,7 @@ let tipCalc = TipCalculatorModel(total: 33.35,taxPct:0.06)
         taxPctSlider.value = Float(tipCalc.taxPct)*100
         //3
         taxPCtLabel.text = "Tax Percentage(\(Int(taxPctSlider.value))%):"
-        resultsTextView.text = ""
+        
     }
 }
 
