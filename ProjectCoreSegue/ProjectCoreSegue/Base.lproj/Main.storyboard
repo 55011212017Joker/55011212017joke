@@ -15,7 +15,26 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="WUA-w3-sAY">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="64" width="400" height="600"/>
+                                </variation>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="WUA-w3-sAY"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="WUA-w3-sAY"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="fAI-Gy-0FQ">
                         <barButtonItem key="rightBarButtonItem" title="Add" id="Nmn-CF-KL3">
@@ -27,7 +46,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="980" y="406"/>
+            <point key="canvasLocation" x="567" y="308"/>
         </scene>
         <!--View ControllerTWO-->
         <scene sceneID="aSU-yH-LOp">
@@ -38,7 +57,7 @@
                         <viewControllerLayoutGuide type="bottom" id="mVk-tJ-7WI"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="gXn-ql-lHk">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name :" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Ue-qK-Igm">
@@ -48,20 +67,37 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="H1B-62-7qA">
-                                <rect key="frame" x="167" y="186" width="240" height="30"/>
+                                <rect key="frame" x="157" y="186" width="161" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CSq-fi-ecr">
+                                <rect key="frame" x="214" y="236" width="30" height="30"/>
+                                <state key="normal" title="Add">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="AddItem:" destination="ruR-JI-ZkO" eventType="touchUpInside" id="5Zw-92-qhj"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="BIw-4f-ksh">
-                        <barButtonItem key="rightBarButtonItem" title="Save" id="rpT-Eg-f3a"/>
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="rpT-Eg-f3a">
+                            <connections>
+                                <action selector="Save:" destination="ruR-JI-ZkO" id="13c-pu-XLh"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="TextInput" destination="H1B-62-7qA" id="s9d-4A-JBa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n4R-mT-lLJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1740" y="421"/>
+            <point key="canvasLocation" x="1083.75" y="341.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="nUO-Wo-9RP">
@@ -79,7 +115,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yN6-Ng-fz3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="345" y="406"/>
+            <point key="canvasLocation" x="-34.5" y="911.25"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ZOs-yF-hCs">
