@@ -1,0 +1,504 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F297295C19A9C7FF00305BD8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F297295B19A9C7FF00305BD8 /* AppDelegate.swift */; };
+		F297295E19A9C7FF00305BD8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F297295D19A9C7FF00305BD8 /* ViewController.swift */; };
+		F297296119A9C7FF00305BD8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F297295F19A9C7FF00305BD8 /* Main.storyboard */; };
+		F297296319A9C7FF00305BD8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F297296219A9C7FF00305BD8 /* Images.xcassets */; };
+		F297296F19A9C7FF00305BD8 /* NiceJarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F297296E19A9C7FF00305BD8 /* NiceJarTests.swift */; };
+		F2F2E1BB19AA1BBD00BCAD56 /* _FBTweakBindObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = F2F2E1A319AA1BBD00BCAD56 /* _FBTweakBindObserver.m */; };
+		F2F2E1BC19AA1BBD00BCAD56 /* _FBTweakCategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2F2E1A519AA1BBD00BCAD56 /* _FBTweakCategoryViewController.m */; };
+		F2F2E1BD19AA1BBD00BCAD56 /* _FBTweakCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2F2E1A719AA1BBD00BCAD56 /* _FBTweakCollectionViewController.m */; };
+		F2F2E1BE19AA1BBD00BCAD56 /* _FBTweakTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F2F2E1A919AA1BBD00BCAD56 /* _FBTweakTableViewCell.m */; };
+		F2F2E1BF19AA1BBD00BCAD56 /* FBTweak.m in Sources */ = {isa = PBXBuildFile; fileRef = F2F2E1AC19AA1BBD00BCAD56 /* FBTweak.m */; };
+		F2F2E1C019AA1BBD00BCAD56 /* FBTweakCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = F2F2E1AE19AA1BBD00BCAD56 /* FBTweakCategory.m */; };
+		F2F2E1C119AA1BBD00BCAD56 /* FBTweakCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = F2F2E1B019AA1BBD00BCAD56 /* FBTweakCollection.m */; };
+		F2F2E1C219AA1BBD00BCAD56 /* FBTweakInline.m in Sources */ = {isa = PBXBuildFile; fileRef = F2F2E1B319AA1BBD00BCAD56 /* FBTweakInline.m */; };
+		F2F2E1C319AA1BBD00BCAD56 /* FBTweakShakeWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = F2F2E1B619AA1BBD00BCAD56 /* FBTweakShakeWindow.m */; };
+		F2F2E1C419AA1BBD00BCAD56 /* FBTweakStore.m in Sources */ = {isa = PBXBuildFile; fileRef = F2F2E1B819AA1BBD00BCAD56 /* FBTweakStore.m */; };
+		F2F2E1C519AA1BBD00BCAD56 /* FBTweakViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2F2E1BA19AA1BBD00BCAD56 /* FBTweakViewController.m */; };
+		F2F2E1C819B0CF2700BCAD56 /* Tweaks.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F2E1C719B0CF2700BCAD56 /* Tweaks.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F297296919A9C7FF00305BD8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F297294E19A9C7FF00305BD8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F297295519A9C7FF00305BD8;
+			remoteInfo = NiceJar;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F297295619A9C7FF00305BD8 /* NiceJar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NiceJar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F297295A19A9C7FF00305BD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F297295B19A9C7FF00305BD8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F297295D19A9C7FF00305BD8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F297296019A9C7FF00305BD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F297296219A9C7FF00305BD8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F297296819A9C7FF00305BD8 /* NiceJarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NiceJarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F297296D19A9C7FF00305BD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F297296E19A9C7FF00305BD8 /* NiceJarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiceJarTests.swift; sourceTree = "<group>"; };
+		F2F2E1A219AA1BBD00BCAD56 /* _FBTweakBindObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _FBTweakBindObserver.h; sourceTree = "<group>"; };
+		F2F2E1A319AA1BBD00BCAD56 /* _FBTweakBindObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _FBTweakBindObserver.m; sourceTree = "<group>"; };
+		F2F2E1A419AA1BBD00BCAD56 /* _FBTweakCategoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _FBTweakCategoryViewController.h; sourceTree = "<group>"; };
+		F2F2E1A519AA1BBD00BCAD56 /* _FBTweakCategoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _FBTweakCategoryViewController.m; sourceTree = "<group>"; };
+		F2F2E1A619AA1BBD00BCAD56 /* _FBTweakCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _FBTweakCollectionViewController.h; sourceTree = "<group>"; };
+		F2F2E1A719AA1BBD00BCAD56 /* _FBTweakCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _FBTweakCollectionViewController.m; sourceTree = "<group>"; };
+		F2F2E1A819AA1BBD00BCAD56 /* _FBTweakTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _FBTweakTableViewCell.h; sourceTree = "<group>"; };
+		F2F2E1A919AA1BBD00BCAD56 /* _FBTweakTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _FBTweakTableViewCell.m; sourceTree = "<group>"; };
+		F2F2E1AA19AA1BBD00BCAD56 /* FBTweak-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FBTweak-Prefix.pch"; sourceTree = "<group>"; };
+		F2F2E1AB19AA1BBD00BCAD56 /* FBTweak.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBTweak.h; sourceTree = "<group>"; };
+		F2F2E1AC19AA1BBD00BCAD56 /* FBTweak.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBTweak.m; sourceTree = "<group>"; };
+		F2F2E1AD19AA1BBD00BCAD56 /* FBTweakCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBTweakCategory.h; sourceTree = "<group>"; };
+		F2F2E1AE19AA1BBD00BCAD56 /* FBTweakCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBTweakCategory.m; sourceTree = "<group>"; };
+		F2F2E1AF19AA1BBD00BCAD56 /* FBTweakCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBTweakCollection.h; sourceTree = "<group>"; };
+		F2F2E1B019AA1BBD00BCAD56 /* FBTweakCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBTweakCollection.m; sourceTree = "<group>"; };
+		F2F2E1B119AA1BBD00BCAD56 /* FBTweakEnabled.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBTweakEnabled.h; sourceTree = "<group>"; };
+		F2F2E1B219AA1BBD00BCAD56 /* FBTweakInline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBTweakInline.h; sourceTree = "<group>"; };
+		F2F2E1B319AA1BBD00BCAD56 /* FBTweakInline.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBTweakInline.m; sourceTree = "<group>"; };
+		F2F2E1B419AA1BBD00BCAD56 /* FBTweakInlineInternal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBTweakInlineInternal.h; sourceTree = "<group>"; };
+		F2F2E1B519AA1BBD00BCAD56 /* FBTweakShakeWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBTweakShakeWindow.h; sourceTree = "<group>"; };
+		F2F2E1B619AA1BBD00BCAD56 /* FBTweakShakeWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBTweakShakeWindow.m; sourceTree = "<group>"; };
+		F2F2E1B719AA1BBD00BCAD56 /* FBTweakStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBTweakStore.h; sourceTree = "<group>"; };
+		F2F2E1B819AA1BBD00BCAD56 /* FBTweakStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBTweakStore.m; sourceTree = "<group>"; };
+		F2F2E1B919AA1BBD00BCAD56 /* FBTweakViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBTweakViewController.h; sourceTree = "<group>"; };
+		F2F2E1BA19AA1BBD00BCAD56 /* FBTweakViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBTweakViewController.m; sourceTree = "<group>"; };
+		F2F2E1C619AA1E7900BCAD56 /* NiceJar-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NiceJar-Bridging-Header.h"; sourceTree = "<group>"; };
+		F2F2E1C719B0CF2700BCAD56 /* Tweaks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tweaks.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F297295319A9C7FF00305BD8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F297296519A9C7FF00305BD8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F297294D19A9C7FF00305BD8 = {
+			isa = PBXGroup;
+			children = (
+				F297295819A9C7FF00305BD8 /* NiceJar */,
+				F297296B19A9C7FF00305BD8 /* NiceJarTests */,
+				F297295719A9C7FF00305BD8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F297295719A9C7FF00305BD8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F297295619A9C7FF00305BD8 /* NiceJar.app */,
+				F297296819A9C7FF00305BD8 /* NiceJarTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F297295819A9C7FF00305BD8 /* NiceJar */ = {
+			isa = PBXGroup;
+			children = (
+				F297295B19A9C7FF00305BD8 /* AppDelegate.swift */,
+				F297295D19A9C7FF00305BD8 /* ViewController.swift */,
+				F2F2E1C719B0CF2700BCAD56 /* Tweaks.swift */,
+				F2F2E1C619AA1E7900BCAD56 /* NiceJar-Bridging-Header.h */,
+				F2F2E1A119AA1BBD00BCAD56 /* FBTweak */,
+				F297295F19A9C7FF00305BD8 /* Main.storyboard */,
+				F297296219A9C7FF00305BD8 /* Images.xcassets */,
+				F297295919A9C7FF00305BD8 /* Supporting Files */,
+			);
+			path = NiceJar;
+			sourceTree = "<group>";
+		};
+		F297295919A9C7FF00305BD8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F297295A19A9C7FF00305BD8 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F297296B19A9C7FF00305BD8 /* NiceJarTests */ = {
+			isa = PBXGroup;
+			children = (
+				F297296E19A9C7FF00305BD8 /* NiceJarTests.swift */,
+				F297296C19A9C7FF00305BD8 /* Supporting Files */,
+			);
+			path = NiceJarTests;
+			sourceTree = "<group>";
+		};
+		F297296C19A9C7FF00305BD8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F297296D19A9C7FF00305BD8 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F2F2E1A119AA1BBD00BCAD56 /* FBTweak */ = {
+			isa = PBXGroup;
+			children = (
+				F2F2E1A219AA1BBD00BCAD56 /* _FBTweakBindObserver.h */,
+				F2F2E1A319AA1BBD00BCAD56 /* _FBTweakBindObserver.m */,
+				F2F2E1A419AA1BBD00BCAD56 /* _FBTweakCategoryViewController.h */,
+				F2F2E1A519AA1BBD00BCAD56 /* _FBTweakCategoryViewController.m */,
+				F2F2E1A619AA1BBD00BCAD56 /* _FBTweakCollectionViewController.h */,
+				F2F2E1A719AA1BBD00BCAD56 /* _FBTweakCollectionViewController.m */,
+				F2F2E1A819AA1BBD00BCAD56 /* _FBTweakTableViewCell.h */,
+				F2F2E1A919AA1BBD00BCAD56 /* _FBTweakTableViewCell.m */,
+				F2F2E1AA19AA1BBD00BCAD56 /* FBTweak-Prefix.pch */,
+				F2F2E1AB19AA1BBD00BCAD56 /* FBTweak.h */,
+				F2F2E1AC19AA1BBD00BCAD56 /* FBTweak.m */,
+				F2F2E1AD19AA1BBD00BCAD56 /* FBTweakCategory.h */,
+				F2F2E1AE19AA1BBD00BCAD56 /* FBTweakCategory.m */,
+				F2F2E1AF19AA1BBD00BCAD56 /* FBTweakCollection.h */,
+				F2F2E1B019AA1BBD00BCAD56 /* FBTweakCollection.m */,
+				F2F2E1B119AA1BBD00BCAD56 /* FBTweakEnabled.h */,
+				F2F2E1B219AA1BBD00BCAD56 /* FBTweakInline.h */,
+				F2F2E1B319AA1BBD00BCAD56 /* FBTweakInline.m */,
+				F2F2E1B419AA1BBD00BCAD56 /* FBTweakInlineInternal.h */,
+				F2F2E1B519AA1BBD00BCAD56 /* FBTweakShakeWindow.h */,
+				F2F2E1B619AA1BBD00BCAD56 /* FBTweakShakeWindow.m */,
+				F2F2E1B719AA1BBD00BCAD56 /* FBTweakStore.h */,
+				F2F2E1B819AA1BBD00BCAD56 /* FBTweakStore.m */,
+				F2F2E1B919AA1BBD00BCAD56 /* FBTweakViewController.h */,
+				F2F2E1BA19AA1BBD00BCAD56 /* FBTweakViewController.m */,
+			);
+			path = FBTweak;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F297295519A9C7FF00305BD8 /* NiceJar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F297297219A9C7FF00305BD8 /* Build configuration list for PBXNativeTarget "NiceJar" */;
+			buildPhases = (
+				F297295219A9C7FF00305BD8 /* Sources */,
+				F297295319A9C7FF00305BD8 /* Frameworks */,
+				F297295419A9C7FF00305BD8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NiceJar;
+			productName = NiceJar;
+			productReference = F297295619A9C7FF00305BD8 /* NiceJar.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F297296719A9C7FF00305BD8 /* NiceJarTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F297297519A9C7FF00305BD8 /* Build configuration list for PBXNativeTarget "NiceJarTests" */;
+			buildPhases = (
+				F297296419A9C7FF00305BD8 /* Sources */,
+				F297296519A9C7FF00305BD8 /* Frameworks */,
+				F297296619A9C7FF00305BD8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F297296A19A9C7FF00305BD8 /* PBXTargetDependency */,
+			);
+			name = NiceJarTests;
+			productName = NiceJarTests;
+			productReference = F297296819A9C7FF00305BD8 /* NiceJarTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F297294E19A9C7FF00305BD8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Dominik Hauser";
+				TargetAttributes = {
+					F297295519A9C7FF00305BD8 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					F297296719A9C7FF00305BD8 = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = F297295519A9C7FF00305BD8;
+					};
+				};
+			};
+			buildConfigurationList = F297295119A9C7FF00305BD8 /* Build configuration list for PBXProject "NiceJar" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F297294D19A9C7FF00305BD8;
+			productRefGroup = F297295719A9C7FF00305BD8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F297295519A9C7FF00305BD8 /* NiceJar */,
+				F297296719A9C7FF00305BD8 /* NiceJarTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F297295419A9C7FF00305BD8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F297296119A9C7FF00305BD8 /* Main.storyboard in Resources */,
+				F297296319A9C7FF00305BD8 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F297296619A9C7FF00305BD8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F297295219A9C7FF00305BD8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F297295E19A9C7FF00305BD8 /* ViewController.swift in Sources */,
+				F2F2E1BB19AA1BBD00BCAD56 /* _FBTweakBindObserver.m in Sources */,
+				F2F2E1C419AA1BBD00BCAD56 /* FBTweakStore.m in Sources */,
+				F2F2E1BF19AA1BBD00BCAD56 /* FBTweak.m in Sources */,
+				F2F2E1BE19AA1BBD00BCAD56 /* _FBTweakTableViewCell.m in Sources */,
+				F2F2E1BD19AA1BBD00BCAD56 /* _FBTweakCollectionViewController.m in Sources */,
+				F2F2E1C819B0CF2700BCAD56 /* Tweaks.swift in Sources */,
+				F2F2E1C119AA1BBD00BCAD56 /* FBTweakCollection.m in Sources */,
+				F2F2E1BC19AA1BBD00BCAD56 /* _FBTweakCategoryViewController.m in Sources */,
+				F2F2E1C219AA1BBD00BCAD56 /* FBTweakInline.m in Sources */,
+				F2F2E1C319AA1BBD00BCAD56 /* FBTweakShakeWindow.m in Sources */,
+				F2F2E1C019AA1BBD00BCAD56 /* FBTweakCategory.m in Sources */,
+				F297295C19A9C7FF00305BD8 /* AppDelegate.swift in Sources */,
+				F2F2E1C519AA1BBD00BCAD56 /* FBTweakViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F297296419A9C7FF00305BD8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F297296F19A9C7FF00305BD8 /* NiceJarTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F297296A19A9C7FF00305BD8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F297295519A9C7FF00305BD8 /* NiceJar */;
+			targetProxy = F297296919A9C7FF00305BD8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F297295F19A9C7FF00305BD8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F297296019A9C7FF00305BD8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F297297019A9C7FF00305BD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F297297119A9C7FF00305BD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F297297319A9C7FF00305BD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = NiceJar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "-DDEBUG";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "NiceJar/NiceJar-Bridging-Header.h";
+			};
+			name = Debug;
+		};
+		F297297419A9C7FF00305BD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = NiceJar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "NiceJar/NiceJar-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		F297297619A9C7FF00305BD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = NiceJarTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NiceJar.app/NiceJar";
+			};
+			name = Debug;
+		};
+		F297297719A9C7FF00305BD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = NiceJarTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NiceJar.app/NiceJar";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F297295119A9C7FF00305BD8 /* Build configuration list for PBXProject "NiceJar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F297297019A9C7FF00305BD8 /* Debug */,
+				F297297119A9C7FF00305BD8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F297297219A9C7FF00305BD8 /* Build configuration list for PBXNativeTarget "NiceJar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F297297319A9C7FF00305BD8 /* Debug */,
+				F297297419A9C7FF00305BD8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F297297519A9C7FF00305BD8 /* Build configuration list for PBXNativeTarget "NiceJarTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F297297619A9C7FF00305BD8 /* Debug */,
+				F297297719A9C7FF00305BD8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F297294E19A9C7FF00305BD8 /* Project object */;
+}

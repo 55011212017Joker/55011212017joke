@@ -26,7 +26,7 @@
                                     <action selector="animateButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="gph-Wm-fnb"/>
                                 </connections>
                             </button>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="QoZ-ho-6IK">
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="10" minValue="10" maxValue="1000" translatesAutoresizingMaskIntoConstraints="NO" id="QoZ-ho-6IK">
                                 <rect key="frame" x="20" y="479" width="566" height="31"/>
                             </slider>
                         </subviews>

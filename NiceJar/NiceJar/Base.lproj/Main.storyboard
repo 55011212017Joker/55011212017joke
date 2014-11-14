@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6205" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6198"/>
+        <capability name="Constraints with attributes relative to the layout margin" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="NiceJar" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="Vjh-hu-fJY">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jar" translatesAutoresizingMaskIntoConstraints="NO" id="yvP-Cy-7m8">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9KW-LO-BRh">
+                                <rect key="frame" x="155" y="172" width="10" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fXE-LE-0JL">
+                                <rect key="frame" x="57" y="0.0" width="207" height="517"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SXT-qM-oMx">
+                                <rect key="frame" x="121" y="538" width="78" height="30"/>
+                                <state key="normal" title="Save Coins">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="saveCoins:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="4n7-Za-l9t"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uKP-c0-OW8">
+                                <rect key="frame" x="238" y="20" width="66" height="30"/>
+                                <state key="normal" title="Summary">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showSummary:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="zVE-TC-TBm"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="fXE-LE-0JL" secondAttribute="bottom" constant="51" id="1YG-TH-VzN"/>
+                            <constraint firstAttribute="centerX" secondItem="9KW-LO-BRh" secondAttribute="centerX" id="5Mk-CX-ntB"/>
+                            <constraint firstItem="Vjh-hu-fJY" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="-20" id="B7c-kh-AKP"/>
+                            <constraint firstItem="uKP-c0-OW8" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="FHk-O4-cd5"/>
+                            <constraint firstItem="fXE-LE-0JL" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="-20" id="Gyd-lM-Kng"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="yvP-Cy-7m8" secondAttribute="trailing" constant="-16" id="LXz-Lv-fdh"/>
+                            <constraint firstItem="fXE-LE-0JL" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="41" id="MSA-3R-ehf"/>
+                            <constraint firstItem="Vjh-hu-fJY" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="S1g-NR-uOm"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="fXE-LE-0JL" secondAttribute="trailing" constant="40" id="W6k-FK-NR2"/>
+                            <constraint firstItem="yvP-Cy-7m8" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="-20" id="aJQ-Sh-kZr"/>
+                            <constraint firstAttribute="centerY" secondItem="9KW-LO-BRh" secondAttribute="centerY" constant="102" id="aOj-N5-3CI"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="Vjh-hu-fJY" secondAttribute="bottom" id="aUl-Is-cL8"/>
+                            <constraint firstAttribute="centerX" secondItem="SXT-qM-oMx" secondAttribute="centerX" id="avb-wH-5py"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="SXT-qM-oMx" secondAttribute="bottom" id="jHo-0w-iND"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="yvP-Cy-7m8" secondAttribute="bottom" id="kmO-QP-4GT"/>
+                            <constraint firstItem="uKP-c0-OW8" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="ksu-N9-JKP"/>
+                            <constraint firstItem="yvP-Cy-7m8" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="qFZ-KO-7D2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Vjh-hu-fJY" secondAttribute="trailing" constant="-16" id="veV-fF-lft"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="coinLabel" destination="9KW-LO-BRh" id="cMW-1c-EFB"/>
+                        <outlet property="jarView" destination="fXE-LE-0JL" id="IO7-Mt-VVq"/>
+                        <outlet property="summaryButton" destination="uKP-c0-OW8" id="AlB-Db-nht"/>
+                        <outlet property="verticalLabelConstraint" destination="aOj-N5-3CI" id="02e-62-zZy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="74" y="129"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bg" width="320" height="568"/>
+        <image name="jar" width="320" height="568"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4">
+            <size key="portraitSize" width="320" height="568"/>
+            <size key="landscapeSize" width="568" height="320"/>
+        </simulatedScreenMetrics>
+    </simulatedMetricsContainer>
+</document>

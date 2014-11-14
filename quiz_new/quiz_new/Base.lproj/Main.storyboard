@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="zBq-MF-i2o">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+    </dependencies>
+    <scenes>
+        <!--Application-->
+        <scene sceneID="XiK-Bf-NT9">
+            <objects>
+                <viewController id="jJh-xp-CJE" customClass="Application" customModule="quiz_new" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qpe-2d-B0Q"/>
+                        <viewControllerLayoutGuide type="bottom" id="fSh-ot-u2Q"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Czm-k9-dZO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xkw-Mw-hgQ">
+                                <rect key="frame" x="150" y="528" width="75" height="30"/>
+                                <state key="normal" title="Show Alert">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showAlertView:" destination="jJh-xp-CJE" eventType="touchUpInside" id="Zy9-Ht-JrA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mqv-zT-u7b" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="758.25" y="168.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="quiz_new" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Crh-zd-OLy">
+                                <rect key="frame" x="172" y="209" width="30" height="30"/>
+                                <state key="normal" title="Attach" backgroundImage="box-icon.png">
+                                    <color key="titleColor" red="1" green="0.2569241712" blue="0.22370972750000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="69" y="331" width="237" height="258"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="jKX-tG-UsP" kind="show" id="0rP-Oh-pv6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="utu-YS-WbP">
+                                <rect key="frame" x="168" y="98" width="39" height="30"/>
+                                <state key="normal" title="Inbox" backgroundImage="cardboard-box-icon-512x512.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="85" y="64" width="205" height="276"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="jJh-xp-CJE" kind="show" id="vHR-wx-fb0"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.7254902124" green="0.93725496529999996" blue="0.90980398650000005" alpha="1" colorSpace="deviceRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="HVm-fW-EYN"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-330.75" y="143.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="jK6-zu-C2Y">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zBq-MF-i2o" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="RsW-Ur-h8m">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="3g4-RU-ul5"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xeu-Rz-inC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-442.5" y="917"/>
+        </scene>
+        <!--Attach-->
+        <scene sceneID="QLZ-21-2hL">
+            <objects>
+                <viewController id="jKX-tG-UsP" customClass="Attach" customModule="quiz_new" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uZC-XS-26j"/>
+                        <viewControllerLayoutGuide type="bottom" id="hpa-7n-0PM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oD3-iS-RuF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EMI-em-SZP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="327.75" y="259.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="box-icon.png" width="396" height="263"/>
+        <image name="cardboard-box-icon-512x512.png" width="512" height="512"/>
+    </resources>
+</document>
